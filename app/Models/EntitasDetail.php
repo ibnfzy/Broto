@@ -5,15 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class EntitasDetail extends Model
 {
     use HasFactory;
-
-    protected $table = 'broto_account';
+    protected $table = 'entitas_detail';
     protected $fillable = [
-        'username',
-        'fullname',
-        'password',
-        'last_login'
+        'id_entitas',
+        'kolom',
+        'tipe_data',
+        'pk'
     ];
 }
